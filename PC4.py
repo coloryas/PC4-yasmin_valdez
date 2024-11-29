@@ -141,8 +141,8 @@ st.markdown("<h2 style='text-align: center;'>Explicación de un tema de las clas
 # st.video("ppc-2024-1.mp4"): Esta línea está agregando un video a la aplicación web.
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://www.youtube.com/watch?v=uArFYpxDOoU" target="_blank"><button>TAP TAP A LA PANTALLA</button></a>'
-st.markdown(enlace, unsafe_allow_html=True)
+#enlace = f'<a href="https://www.youtube.com/watch?v=uArFYpxDOoU" target="_blank"><button>TAP TAP A LA PANTALLA</button></a>'
+#st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
 # El atributo href se utiliza para especificar la URL de destino del enlace.
