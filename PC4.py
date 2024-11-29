@@ -175,15 +175,15 @@ grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
 # Mostramos el gráfico seleccionado
 if grafico_seleccionado == 'Frecuencia de goleadas':
     sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico de barras muestra la frecuencia de goleadas del equipo Fiorentina, comparando los goles anotados por los locales vs. los visitantes. Se importó la biblioteca Matplotlib.pyplot y a través del Plt.bar() para crear un gráfico de barras. Inicialmente, se definió una lista llamada Goles que contiene las cantidades de goles marcados por la Fiorentina como equipo local (g_local) y como visitante (g_visitante). Además, se añadieron las etiquetas LOCAL y VISITANTE. Para el tamaño del gráfico, se usó plt.figure(figsize=(10, 6)). Para los colores personalizados de las barras, se usó los códigos #c39bd3 (lila oscuro) y #e8daef (lila claro) para diferenciarlos. También se añadió un título principal plt.title(), un nombre para el eje X plt.xlabel() y un nombre para el eje Y plt.ylabel(). Finalmente, el plt.show() para mostrar el gráfico.</div>", unsafe_allow_html=True)
-    sidebar.image("Grafico_1.png", caption='Frecuencia de goleadas', width=500)
+    sidebar.image("Grafico_1.PNG", caption='Frecuencia de goleadas', width=500)
     pass
 elif grafico_seleccionado == 'Mapa de películas':
     sidebar.markdown("<div style='text-align: justify'>El gráfico 2 muestra un mapa interactivo donde se utilizó el folium.Map(). Se creó un mapa base con las coordenadas [40.00, -100.0], lo que ubica el mapa de los Estados Unidos. El mapa tiene un zoom de 4 y utiliza el OpenStreetMap para mostrar el fondo cartográfico. Se añadieron marcadores a través de un bucle que itera sobre un DataFrame llamado dataframe_Películas, en el cual cada fila representa una película. Los marcadores ubican la latitud y longitud que fueron extraídas del DataFrame, y cada uno contiene columnas (Popup) para mostrar el nombre de la película y (Tooltip) para señalar el país relacionado con dicha película. Como resultado, el mapa interactivo muestra los marcadores en Los Ángeles y Nueva York, identificando los lugares donde se grabaron ciertas películas representadas en el DataFrame. .</div>", unsafe_allow_html=True)
-    sidebar.image("Grafico_2.png", caption='Mapa de películas', width=500)
+    sidebar.image("Grafico_2.PNG", caption='Mapa de películas', width=500)
     pass
 elif grafico_seleccionado == 'Mapa de ubicación':
     sidebar.markdown("<div style='text-align: justify'>El gráfico 2.1 muestra un mapa interactivo donde se utilizó el folium.Map() para generar un mapa interactivo con las coordenadas geográficas [-18.00, -60.0], con un zoom de 4 y utilizando el OpenStreetMap. Luego, para añadir marcadores al mapa, se empleó un bucle que itera sobre un DataFrame llamado Páezz, el cual contiene columnas como Latitude, Longitude, Language y Glottocode. Cada marcador tiene dos elementos: un Popup para el nombre del lenguaje asociado y un Tooltip que despliega el código ISO. Como resultado, el mapa interactivo muestra los marcadores que indican la posición geográfica de lenguajes o dialectos..</div>", unsafe_allow_html=True)
-    sidebar.image("Grafico_21.png", caption='Mapa de ubicación', width=500)
+    sidebar.image("Grafico_21.PNG", caption='Mapa de ubicación', width=500)
     pass
 
 # if grafico_seleccionado == 'Gráfico de Macroareas': Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
